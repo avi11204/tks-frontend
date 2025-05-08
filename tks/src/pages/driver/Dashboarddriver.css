@@ -1,0 +1,64 @@
+
+.driver-dashboard {
+    padding: 20px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+  }
+  
+  .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    color: #2563eb;
+    font-weight: bold;
+  }
+  
+  .notifications {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .notifications h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #0f172a;
+  }
+  
+  .notifications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #475569;
+  }
+  
+  .notifications li {
+    margin-bottom: 8px;
+  }
+  

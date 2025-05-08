@@ -1,0 +1,26 @@
+.driver-profile {
+    padding: 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    align-items: center;
+  }
+  
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-details p {
+    margin: 8px 0;
+    color: #334155;
+  }
+  

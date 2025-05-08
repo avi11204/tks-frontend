@@ -1,0 +1,124 @@
+body {
+  background-color: #ffffff; /* White background for the entire page */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.dashboard {
+  background-color: #f9fafb;
+  padding: 2rem;
+  color: #111827;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart {
+  flex: 1;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-section {
+  margin-bottom: 2rem;
+}
+
+.progress-item {
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background-color: #e0e7ff;
+  border-radius: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background-color: #6366f1;
+}
+
+.map-section {
+  margin-bottom: 2rem;
+}
+
+.activity {
+  margin-bottom: 2rem;
+}
+
+.table-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #e0e7ff;
+}
+
+.feedback-section {
+  margin: 2rem 0;
+}
+
+.feedback-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.feedback-card {
+  background-color: #9f9898;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #1e3a8a;
+  flex: 1 1 30%; /* Makes each card take up 30% of the container width */
+  min-width: 250px; /* Ensures cards don't get too small on mobile */
+}
+
+.feedback-card p {
+  text-align: center;
+}

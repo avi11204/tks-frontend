@@ -1,0 +1,47 @@
+/* src/App.css */
+body {
+    margin: 0;
+   
+    background-image: url(https://i.pinimg.com/736x/08/44/1a/08441ad00820ae6af311d63accde6cc6.jpg);
+    font-family: Arial, sans-serif; 
+    background-color: #8f6565;
+}
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #2c7a7b;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+.login-container button {
+    background-color: #2c7a7b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background-color: #285e61;
+}

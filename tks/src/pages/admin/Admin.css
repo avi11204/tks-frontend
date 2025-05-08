@@ -1,0 +1,135 @@
+/* Admin.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  /* Header */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f0f3f6;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #f9fafc;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin: 0.25rem;
+  }
+  
+  button:hover {
+    background-color: #1a252f;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 1rem;
+    background-color: #f9fbfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  /* Toggle Form Button */
+  .toggle-form-button {
+    background-color: #27ae60;
+  }
+  
+  .toggle-form-button:hover {
+    background-color: #219150;
+  }
+  
+  /* Export Button */
+  .export-button {
+    background-color: #2980b9;
+  }
+  
+  .export-button:hover {
+    background-color: #21618c;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  }
+  
