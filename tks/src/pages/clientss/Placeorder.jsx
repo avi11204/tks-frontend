@@ -1,3 +1,4 @@
+
 // import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import axios from 'axios';
@@ -8,7 +9,11 @@
 //     clientName: '',
 //     item: '',
 //     quantity: '',
-//     address: ''
+//     address: '',
+//     email: '',
+//     phone: '',
+//     preferredDeliveryDate: '',
+//     notes: '',
 //   });
 
 //   const username = localStorage.getItem('username') || 'Client';
@@ -19,11 +24,29 @@
 
 //   const handleSubmit = async e => {
 //     e.preventDefault();
+
+//     const orderData = {
+//       clientName: formData.clientName,
+//       item: formData.item,
+//       quantity: formData.quantity,
+//       address: formData.address
+//       // Not sending email, phone, preferredDeliveryDate, notes to backend
+//     };
+
 //     try {
-//       await axios.post('http://localhost:5000/api/orders', formData);
+//       await axios.post('http://localhost:5000/api/orders', orderData);
 //       alert('Order placed successfully!');
-//       setFormData({ clientName: '', item: '', quantity: '', address: '' });
-//       window.location.href = '/client/orders'; // Redirect after placing
+//       setFormData({
+//         clientName: '',
+//         item: '',
+//         quantity: '',
+//         address: '',
+//         email: '',
+//         phone: '',
+//         preferredDeliveryDate: '',
+//         notes: '',
+//       });
+//       window.location.href = '/client/orders';
 //     } catch (err) {
 //       alert('Error placing order.');
 //       console.error(err);
@@ -50,6 +73,13 @@
 //         <input name="item" value={formData.item} onChange={handleChange} placeholder="Item" required />
 //         <input name="quantity" value={formData.quantity} onChange={handleChange} type="number" placeholder="Quantity" required />
 //         <input name="address" value={formData.address} onChange={handleChange} placeholder="Address" required />
+
+//         {/* Extra frontend-only fields */}
+//         <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="Email" />
+//         <input name="phone" value={formData.phone} onChange={handleChange} type="tel" placeholder="Phone Number" />
+//         <input name="preferredDeliveryDate" value={formData.preferredDeliveryDate} onChange={handleChange} type="date" placeholder="Preferred Delivery Date" />
+//         <textarea name="notes" value={formData.notes} onChange={handleChange} placeholder="Additional Notes" rows="3"></textarea>
+
 //         <button type="submit" className="client-btn">Submit</button>
 //       </form>
 //     </div>
@@ -57,6 +87,10 @@
 // };
 
 // export default PlaceOrder;
+
+
+
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -92,7 +126,7 @@ const PlaceOrder = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/orders', orderData);
+      await axios.post('https://tks-backend-2g8f.onrender.com', orderData);
       alert('Order placed successfully!');
       setFormData({
         clientName: '',
