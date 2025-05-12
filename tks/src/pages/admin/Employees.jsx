@@ -18,16 +18,16 @@ const Employees = () => {
   }, []);
 
   const fetchEmployees = async () => {
-    const res = await axios.get('http://localhost:5000/api/employees');
+    const res = await axios.get("https://tks-backend-2g8f.onrender.com");
     setEmployees(res.data);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (editingId) {
-      await axios.put(`http://localhost:5000/api/employees/${editingId}`, formData);
+      await axios.put("https://tks-backend-2g8f.onrender.com/${editingId}", formData);
     } else {
-      await axios.post('http://localhost:5000/api/employees', formData);
+      await axios.post("https://tks-backend-2g8f.onrender.com", formData);
     }
     fetchEmployees();
     setFormData({ name: '', email: '', role: '' });
@@ -42,7 +42,7 @@ const Employees = () => {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/employees/${id}`);
+    await axios.delete("https://tks-backend-2g8f.onrender.com/${id}");
     fetchEmployees();
   };
 
