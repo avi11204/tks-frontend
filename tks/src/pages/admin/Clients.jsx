@@ -19,7 +19,7 @@ const Clients = () => {
   }, []);
 
   const fetchClients = async () => {
-    const res = await axios.get('http://localhost:5000/api/clients');
+    const res = await axios.get("https://tks-backend-2g8f.onrender.com");
     setClients(res.data);
   };
 
@@ -30,9 +30,9 @@ const Clients = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     if (editingClient) {
-      await axios.put(`http://localhost:5000/api/clients/${editingClient._id}`, formData);
+      await axios.put("https://tks-backend-2g8f.onrender.com/${editingClient._id}", formData);
     } else {
-      await axios.post('http://localhost:5000/api/clients', formData);
+      await axios.post("https://tks-backend-2g8f.onrender.com", formData);
     }
     fetchClients();
     resetForm();
@@ -57,7 +57,7 @@ const Clients = () => {
   };
 
   const handleDelete = async id => {
-    await axios.delete(`http://localhost:5000/api/clients/${id}`);
+    await axios.delete("https://tks-backend-2g8f.onrender.com/${id}");
     fetchClients();
   };
 
