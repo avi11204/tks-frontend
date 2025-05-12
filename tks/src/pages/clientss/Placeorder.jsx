@@ -34,7 +34,7 @@ const PlaceOrder = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/orders', orderData);
+      await axios.post('https://tks-backend-2g8f.onrender.com', orderData);
       alert('Order placed successfully!');
       setFormData({
         clientName: '',
