@@ -10,7 +10,7 @@ const MyOrders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/orders');
+        const response = await axios.get('https://tks-backend-2g8f.onrender.com');
         setOrders(response.data);
       } catch (err) {
         alert('Failed to fetch orders');
