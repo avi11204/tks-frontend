@@ -169,16 +169,12 @@ export default function Dashboard() {
 
         <section className="map-section">
           <h3>Vehicle Locations</h3>
-          <MapContainer
-            center={[51.505, -0.09]}
-            zoom={13}
-            style={{ height: "300px", width: "100%" }}
-          >
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[51.505, -0.09]}>
-              <Popup>Truck #12</Popup>
-            </Marker>
-          </MapContainer>
+        <MapContainer center={[11.2758, 77.5880]} zoom={13} style={{ height: '100vh', width: '100%' }}>
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <Marker position={[11.2758, 77.5880]}>
+        <Popup>Truck #12 - Perundurai, Erode</Popup>
+      </Marker>
+    </MapContainer>
         </section>
 
         <section className="activity">
@@ -186,7 +182,7 @@ export default function Dashboard() {
           <ul>
             <li>📦 Order #2345 placed</li>
             <li>🛠️ Vehicle #12 assigned to Route B</li>
-            <li>👤 Driver Emma added</li>
+            <li>👤 Driver Rajesh added</li>
             <li>🔄 Booking #889 rescheduled</li>
             <li>💰 Product sales updated</li>
           </ul>
@@ -206,12 +202,12 @@ export default function Dashboard() {
               <tr>
                 <td>Granite</td>
                 <td>120</td>
-                <td>$12,000</td>
+                <td>Rs.12,000</td>
               </tr>
               <tr>
                 <td>Limestone</td>
                 <td>80</td>
-                <td>$8,000</td>
+                <td>Rs.8,000</td>
               </tr>
             </tbody>
           </table>

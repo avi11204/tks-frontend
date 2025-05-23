@@ -26,7 +26,7 @@ const Sidebar = () => {
               <Link to="/admin/vehicles" style={{ color: 'inherit', textDecoration: 'none' }}>Vehicles</Link>
               <Link to="/admin/inventory"style={{ color: 'inherit', textDecoration: 'none' }}>Inventory</Link>
               <Link to="/admin/orders"style={{ color: 'inherit', textDecoration: 'none' }}>orders</Link>
-              <Link to="/admin/settings" style={{ color: 'inherit', textDecoration: 'none' }}>Settings</Link>
+              {/* <Link to="/admin/settings" style={{ color: 'inherit', textDecoration: 'none' }}>Settings</Link> */}
             </nav>
           </div>
           <button

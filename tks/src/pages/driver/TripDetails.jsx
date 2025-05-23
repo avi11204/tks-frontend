@@ -7,7 +7,7 @@ const TripAssignments = () => {
     origin: 'Perundurai',
     destination: 'Erode',
     date: '2025-05-08',
-    status: i % 2 === 0 ? 'Completed' : 'Ongoing',
+    status: i-1 % 2 === 0 ? 'Ongoing' : 'Completed',
   }));
 
   return (

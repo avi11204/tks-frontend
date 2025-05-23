@@ -66,11 +66,11 @@ const Homeclient = () => {
             <h4>Cement</h4>
             <p>Reliable and durable cement for every project.</p>
           </div>
-          <div className="card">
+          {/* <div className="card">
           <img src={waterImg} alt="Water" />
             <h4>Water</h4>
             <p>Freshwater delivery for your construction site.</p>
-          </div>
+          </div> */}
           <div className="card">
           <img src={stoneImg} alt="Stone" />
             <h4>Gravels</h4>
